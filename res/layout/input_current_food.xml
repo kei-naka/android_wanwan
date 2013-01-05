@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/titlebar" />
+    
+    <TextView
+        style="@style/header"
+        android:textSize="@dimen/textM"
+        android:text="これをあげる！！" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dip"
+        android:background="#f4ede4"
+        android:orientation="vertical" >
+	
+        <TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"
+			android:layout_marginBottom="20dip"
+			android:gravity="center"
+			android:textSize="@dimen/textL"
+			android:textColor="#000"
+			android:text="11/12(Thu) 13:45" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="10dip"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+            
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/textM"
+				android:textColor="#000"
+				android:text="今の体重は" />
+	        
+	        <EditText
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:layout_marginLeft="5dip"
+			     android:layout_marginRight="5dip"
+			     android:id="@+id/curWeight"
+			     android:inputType="numberDecimal"
+			     android:focusable="false"
+			     android:text="12.3" />
+	        
+	        <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/textM"
+				android:textColor="#000"
+				android:text="kg" />
+	            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+            
+			<Spinner
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:id="@+id/foodNames"
+			     android:background="@drawable/spinner_design"
+			     android:entries="@array/foodNames" />
+	        
+	        <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:textSize="@dimen/textM"
+				android:textColor="#000"
+				android:text="を" />
+	    </LinearLayout>
+	    
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="10dip"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+	        
+	        <EditText
+			     android:layout_width="wrap_content"
+			     android:layout_height="wrap_content"
+			     android:id="@+id/curCarolie"
+			     android:inputType="numberDecimal"
+			     android:focusable="false"
+			     android:text="123" />
+	        
+	        <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:textSize="@dimen/textM"
+				android:textColor="#000"
+				android:text="g (359 kcal) あげる" />
+			
+        </LinearLayout>
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_gravity="center"
+            android:id="@+id/btnSaveCurFoodInfo"
+            android:padding="10dip"
+            android:background="@drawable/button_design"
+            android:text="保存" />
+        
+    </LinearLayout>
+    
+</LinearLayout>

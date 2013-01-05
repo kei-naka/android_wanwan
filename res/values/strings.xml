@@ -1,0 +1,87 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">わんにゃんだいえったー</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="settings">設定</string>
+    <string name="history">履歴</string>
+    <string name="givefood">給餌</string>
+    
+    <!-- イヌの情報（ヘッダ） -->
+    <string name="dogProfile">犬の情報</string>
+    
+    <!-- イヌの情報（写真） -->
+    <string name="dogPhotoDesc">ウチのわんこ</string>
+    
+    <!-- イヌの情報（コンテンツ） -->
+    <string name="dogName">イヌのナマエ（長い名前だとこんな表示になる）</string>
+	<string name="dogBreed">アイリッシュ・ソフトコーテッド・ウィートン・テリア</string>
+	<string name="dogAge">2歳3ヶ月</string>
+	<string name="dogSex">オス</string>
+	<string name="dogBC">去勢手術済</string>
+	
+    <!-- 前回の餌の情報（ヘッダ） -->
+	<string name="previousFood">前回の餌の情報</string>
+	
+	<!-- 前回の餌の情報（コンテンツ） -->
+	<string name="preFoodTime">11/12(Thu) 13:45</string>
+	<string name="preWeight">13.0kg</string>
+	<string name="preFoodName">ユーカヌパ（ソフトドライフード）（オレオレ食品株式会社）</string>
+	<string name="preFoodAmount">20.3g（123cal）</string>
+	
+	<!-- 前回の餌の情報（ボタン） -->
+    <string name="btnModify">修正</string>
+	<string name="btnGraph">グラフ表示</string>
+	
+	<!-- 今回の餌の情報（ヘッダ） -->
+	<string name="currentFood">今回の餌の情報</string>
+	
+	<!-- 今回の餌の情報（コンテンツ） -->
+	<string-array name="exTimePDay">
+	    <item>軽い運動・労働（3時間未満）</item>
+	    <item>中程度の運動・労働（6時間未満）</item>
+	    <item>重労働（6時間以上)</item>
+	</string-array>
+	
+	<string-array name="dogAge">
+	    <item>授乳期</item>
+	    <item>離乳～生後4ヶ月未満</item>
+	    <item>生後4ヶ月～10ヶ月未満</item>
+	    <item>生後10ヶ月～12ヶ月</item>
+	    <item>成犬</item>
+	    <item>高齢犬</item>	    
+	</string-array>
+	
+	<string-array name="dogSex">
+	    <item>オス</item>
+	    <item>メス（妊娠していない）</item>
+	    <item>メス（妊娠1～4週）</item>
+	    <item>メス（妊娠5～6週）</item>
+	    <item>メス（妊娠後期）</item>
+	</string-array>
+	
+	<string-array name="weightDirection">
+	    <item>ダイエットさせたい</item>
+	    <item>今の体重を維持させたい</item>
+	    <item>体重をつけさせたい</item>
+	</string-array>
+	
+	<!-- 今回の餌の情報（ボタン） -->
+    <string name="btnCalcFood">給餌量を計算</string>
+    
+    <!-- 餌の計算結果 -->
+    <string-array name="curFoodCandidate">
+        <item>ドッグフードAを120g</item>
+        <item>ドッグフードBを100g</item>
+        <item>ドッグフードCを80g</item>
+    </string-array>
+    
+    <!-- 給餌情報の入力 -->
+    <string-array name="foodNames">
+        <item>ドッグフードA</item>
+        <item>ドッグフードB</item>
+        <item>ドッグフードC</item>
+    </string-array>
+	
+</resources>
