@@ -16,7 +16,7 @@
     
     <include layout="@layout/titlebar"/>
     
-    <ImageView
+    <Button
 		android:id="@+id/TOPImage"
 		android:layout_width="150dp"
 		android:layout_height="150dp"
@@ -24,8 +24,9 @@
 		android:layout_marginLeft="10dp"
 		android:layout_marginRight="10dp"
 		android:layout_marginBottom="5dp"
-		android:onClick="TOPImgListener"
-		android:layout_gravity="center_horizontal" />
+		android:layout_gravity="center_horizontal"
+		android:background="#ccc"
+		android:text="Click to select photo" />
 		<!-- android:src="@drawable/dog"
 		android:contentDescription="top image" /> -->
     

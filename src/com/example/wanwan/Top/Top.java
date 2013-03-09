@@ -18,6 +18,8 @@ import android.widget.TextView;
 
 public class Top extends Activity {
 	
+	private int REQUEST_EDIT_PHOTO = 1;
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,7 @@ public class Top extends Activity {
         DatabaseOpenHelper helper = new DatabaseOpenHelper(this);
         SQLiteDatabase db = helper.getReadableDatabase();
 
+        // データベースからactive_flagが1のプロフィールを抽出、表示する
         Cursor Prof = null;
         try {
         	/*
@@ -102,11 +105,16 @@ public class Top extends Activity {
         		Prof.close();
         	}
         }
-    }
-    
-    public void TOPImgListener(View view) {
-    	Intent intent = new Intent(Top.this, com.example.wanwan.Top.EditPhoto.class);
-    	startActivity(intent);
+        
+        // 写真枠のボタンが押された時の画面遷移を設定
+        findViewById(R.id.TOPImage).setOnClickListener(new View.OnClickListener() {
+        	@Override
+        	public void onClick(View view) {
+        		Intent intent = new Intent(Top.this, com.example.wanwan.Top.EditPhoto.class);
+        		// startActivity(intent);
+        		startActivityForResult(intent, REQUEST_EDIT_PHOTO);
+        	}
+        });
     }
     
     @Override
