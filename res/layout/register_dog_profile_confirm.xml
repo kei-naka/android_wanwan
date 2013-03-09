@@ -1,0 +1,189 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="5dp"
+	android:layout_marginLeft="10dp"
+	android:layout_marginRight="12dp"
+	android:layout_marginBottom="5dp"
+	android:layout_gravity="center_horizontal"
+	android:orientation="vertical" >
+	
+    <!--
+    「なまえ」等のカラム名は、「新規プロフィール登録」のページ共通なので、流用する。
+    実際の名前などの値は、前画面から遷移してきたものを設定するため、このページ独自のIDを割り振る。
+    プレフィックスは、 Register Dog Confirmation : RDC とする。 
+     -->
+	    
+    <!-- 名前の登録 -->
+	<!-- <TableRow> -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+		    android:layout_margin="5dp"
+		    android:layout_gravity="left"
+		    android:gravity="center"
+		    android:textColor="#000"
+		    android:background="#71b733"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+		    android:text="@string/RDName" />
+		<TextView
+		    android:id="@+id/RDCName"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:textColor="#000" />
+	</LinearLayout>
+	<!-- </TableRow> -->
+	
+	<!-- <TableRow> -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <TextView
+		    android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+		    android:layout_margin="5dp"
+		    android:layout_gravity="left"
+		    android:gravity="center"
+		    android:textColor="#000"
+		    android:background="#71b733"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+		    android:text="@string/RDBirthday" />
+		<TextView
+		    android:id="@+id/RDCBirthday"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:textColor="#000" />
+	</LinearLayout>
+	<!-- </TableRow> -->
+
+	<!-- 性別の登録 -->
+    <!-- <TableRow> -->
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+		    android:layout_margin="5dp"
+		    android:layout_gravity="left"
+		    android:gravity="center"
+		    android:textColor="#000"
+		    android:background="#71b733"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+	        android:text="@string/RDSex" />
+	    <TextView
+	        android:id="@+id/RDCSex"
+	        android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:textColor="#000" />
+	</LinearLayout>
+    <!-- </TableRow> -->
+    
+	<!-- 犬種の登録 -->
+    <!-- <TableRow> -->
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+		    android:layout_margin="5dp"
+		    android:layout_gravity="left"
+		    android:gravity="center"
+		    android:textColor="#000"
+		    android:background="#71b733"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+	        android:text="@string/RDBreed" />
+	    <TextView
+	        android:id="@+id/RDCBreed"
+	        android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:textColor="#000" />
+	</LinearLayout>
+    <!-- </TableRow> -->
+
+    <!-- 体重の登録 -->
+    <!-- 
+    <TableRow>
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="5dp"
+	        android:textColor="#000"
+	        android:text="@string/RDWeight" />
+	    <EditText
+	        android:id="@+id/RDWeight"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:padding="5dp"
+		    android:textColor="#000"
+		    android:layout_span="3" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:textColor="#000"
+	        android:text="@string/unitKg" />
+    </TableRow>
+    -->
+    
+    <!-- 適正体重の登録 -->
+    <!-- <TableRow> -->
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+		    android:layout_margin="5dp"
+		    android:layout_gravity="left"
+		    android:gravity="center"
+		    android:textColor="#000"
+		    android:background="#71b733"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+	        android:text="@string/RDNrmWeight" />
+	    <TextView
+	        android:id="@+id/RDCNrmWeight"
+	        android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:textColor="#000" />
+	</LinearLayout>
+    <!-- </TableRow> -->
+</LinearLayout>

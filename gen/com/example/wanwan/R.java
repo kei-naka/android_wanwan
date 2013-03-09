@@ -9,18 +9,22 @@ package com.example.wanwan;
 
 public final class R {
     public static final class array {
+        public static final int RDSexArr=0x7f060003;
+        public static final int SFAlertTimeArr=0x7f060000;
+        public static final int SFNewFoodArr=0x7f060002;
+        public static final int SFPeriodUnitArr=0x7f060001;
         /**  餌の計算結果 
          */
-        public static final int curFoodCandidate=0x7f060004;
-        public static final int dogAge=0x7f060001;
-        public static final int dogSex=0x7f060002;
+        public static final int curFoodCandidate=0x7f060008;
+        public static final int dogAge=0x7f060005;
+        public static final int dogSex=0x7f060006;
         /**  今回の餌の情報（コンテンツ） 
          */
-        public static final int exTimePDay=0x7f060000;
+        public static final int exTimePDay=0x7f060004;
         /**  給餌情報の入力 
          */
-        public static final int foodNames=0x7f060005;
-        public static final int weightDirection=0x7f060003;
+        public static final int foodNames=0x7f060009;
+        public static final int weightDirection=0x7f060007;
     }
     public static final class attr {
     }
@@ -32,123 +36,286 @@ public final class R {
     public static final class drawable {
         public static final int button_design=0x7f020000;
         public static final int dog=0x7f020001;
-        public static final int food=0x7f020002;
-        public static final int ic_action_search=0x7f020003;
-        public static final int ic_down_arrow=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int ic_tab_example_unselected=0x7f020006;
-        public static final int ic_up_arrow=0x7f020007;
-        public static final int spinner_design=0x7f020008;
+        public static final int dog_01=0x7f020002;
+        public static final int dog_01_thumb=0x7f020003;
+        public static final int dog_02=0x7f020004;
+        public static final int dog_02_thumb=0x7f020005;
+        public static final int dog_03=0x7f020006;
+        public static final int dog_03_thumb=0x7f020007;
+        public static final int dog_04=0x7f020008;
+        public static final int dog_04_thumb=0x7f020009;
+        public static final int dog_05=0x7f02000a;
+        public static final int dog_05_thumb=0x7f02000b;
+        public static final int dog_06=0x7f02000c;
+        public static final int dog_06_thumb=0x7f02000d;
+        public static final int dog_07=0x7f02000e;
+        public static final int dog_07_thumb=0x7f02000f;
+        public static final int dog_08=0x7f020010;
+        public static final int dog_08_thumb=0x7f020011;
+        public static final int error=0x7f020012;
+        public static final int food=0x7f020013;
+        public static final int goleft=0x7f020014;
+        public static final int goright=0x7f020015;
+        public static final int ic_action_search=0x7f020016;
+        public static final int ic_down_arrow=0x7f020017;
+        public static final int ic_launcher=0x7f020018;
+        public static final int ic_tab_example_unselected=0x7f020019;
+        public static final int ic_up_arrow=0x7f02001a;
+        public static final int picture_frame=0x7f02001b;
+        public static final int sample_0=0x7f02001c;
+        public static final int sample_1=0x7f02001d;
+        public static final int sample_2=0x7f02001e;
+        public static final int sample_3=0x7f02001f;
+        public static final int sample_4=0x7f020020;
+        public static final int sample_5=0x7f020021;
+        public static final int sample_6=0x7f020022;
+        public static final int sample_7=0x7f020023;
+        public static final int sample_thumb_0=0x7f020024;
+        public static final int sample_thumb_1=0x7f020025;
+        public static final int sample_thumb_2=0x7f020026;
+        public static final int sample_thumb_3=0x7f020027;
+        public static final int sample_thumb_4=0x7f020028;
+        public static final int sample_thumb_5=0x7f020029;
+        public static final int sample_thumb_6=0x7f02002a;
+        public static final int sample_thumb_7=0x7f02002b;
+        public static final int spinner_design=0x7f02002c;
     }
     public static final class id {
-        public static final int btnCalcFood=0x7f09000f;
-        public static final int btnDogProfileHeader=0x7f090009;
-        public static final int btnGraph=0x7f090022;
-        public static final int btnInputCurFoodInfo=0x7f09001a;
-        public static final int btnModify=0x7f090021;
-        public static final int btnPreviousFoodHeader=0x7f09000c;
-        public static final int btnSaveCurFoodInfo=0x7f09002a;
-        public static final int checkBC=0x7f090011;
-        public static final int curCarolie=0x7f090029;
-        public static final int curFoodCandidate=0x7f090019;
-        public static final int curFoodTime=0x7f090010;
-        public static final int curWeight=0x7f090027;
-        public static final int dogAge=0x7f09001e;
-        public static final int dogAgeCategory=0x7f090013;
-        public static final int dogBC=0x7f090020;
-        public static final int dogBreed=0x7f09001d;
-        public static final int dogExTimePDay=0x7f090012;
-        public static final int dogName=0x7f09001c;
-        public static final int dogPhoto=0x7f09001b;
-        public static final int dogSex=0x7f09001f;
-        public static final int dogSexCategory=0x7f090014;
-        public static final int dogWeight=0x7f090015;
-        public static final int eachCarolie=0x7f090018;
-        public static final int food=0x7f090000;
-        public static final int foodCalorieContent=0x7f090006;
-        public static final int foodCalorieHeader=0x7f090005;
-        public static final int foodCompanyContent=0x7f090004;
-        public static final int foodCompanyHeader=0x7f090003;
-        public static final int foodMemoContent=0x7f090008;
-        public static final int foodMemoHeader=0x7f090007;
-        public static final int foodNameContent=0x7f090002;
-        public static final int foodNameHeader=0x7f090001;
-        public static final int foodNames=0x7f090028;
-        public static final int icDogProfileHeader=0x7f09000a;
-        public static final int icPreviousFoodHeader=0x7f09000d;
-        public static final int lyPreviousFood=0x7f09000e;
-        public static final int lytDogProfile=0x7f09000b;
-        public static final int menu_settings=0x7f09002b;
-        public static final int preFoodAmount=0x7f090026;
-        public static final int preFoodName=0x7f090025;
-        public static final int preFoodTime=0x7f090023;
-        public static final int preWeight=0x7f090024;
-        public static final int totalCarolie=0x7f090017;
-        public static final int weightDirection=0x7f090016;
+        public static final int IFBluetoothBtn=0x7f090007;
+        public static final int IFDateTime=0x7f090003;
+        public static final int IFDogName=0x7f090004;
+        public static final int IFFoodName=0x7f090005;
+        public static final int IFSaveBtn=0x7f090009;
+        public static final int IFSaveTmplBtn=0x7f090008;
+        public static final int IFWeight=0x7f090006;
+        public static final int IWBluetoothBtn=0x7f09000d;
+        public static final int IWDateTime=0x7f09000a;
+        public static final int IWDogName=0x7f09000b;
+        public static final int IWSaveBtn=0x7f09000e;
+        public static final int IWWeight=0x7f09000c;
+        public static final int RDBirthday=0x7f090017;
+        public static final int RDBreed=0x7f090019;
+        public static final int RDCBackBtn=0x7f090014;
+        public static final int RDCBirthday=0x7f09001d;
+        public static final int RDCBreed=0x7f09001f;
+        public static final int RDCComment=0x7f090013;
+        public static final int RDCName=0x7f09001c;
+        public static final int RDCNrmWeight=0x7f090020;
+        public static final int RDCSaveBtn=0x7f090015;
+        public static final int RDCSex=0x7f09001e;
+        public static final int RDComment=0x7f090010;
+        public static final int RDCselectPhoto=0x7f090012;
+        public static final int RDName=0x7f090016;
+        public static final int RDNextBtn=0x7f090011;
+        public static final int RDNrmWeightFrom=0x7f09001a;
+        public static final int RDNrmWeightTo=0x7f09001b;
+        public static final int RDSex=0x7f090018;
+        public static final int RDselectPhoto=0x7f09000f;
+        public static final int RFCalorie=0x7f090022;
+        public static final int RFFavorite=0x7f090025;
+        public static final int RFFoodName=0x7f090021;
+        public static final int RFManufacture=0x7f090023;
+        public static final int RFMemo=0x7f090024;
+        public static final int RFNextBtn=0x7f090026;
+        public static final int SFAgeMonth=0x7f09002e;
+        public static final int SFAgeYear=0x7f09002d;
+        public static final int SFAlertAgeLyt=0x7f09002c;
+        public static final int SFAlertName=0x7f09002a;
+        public static final int SFAlertPeriodLyt=0x7f090031;
+        public static final int SFAlertTime=0x7f09002b;
+        public static final int SFAlertWeightLyt=0x7f09002f;
+        public static final int SFNewFood=0x7f090034;
+        public static final int SFNextBtn=0x7f090035;
+        public static final int SFPeriod=0x7f090032;
+        public static final int SFPeriodUnit=0x7f090033;
+        public static final int SFWeight=0x7f090030;
+        public static final int SHGoLeftBtn=0x7f090029;
+        public static final int SHOptionBtn=0x7f090028;
+        public static final int SHTextViewBtn=0x7f090027;
+        public static final int TOPBirthday=0x7f090039;
+        public static final int TOPBreed=0x7f09003b;
+        public static final int TOPComment=0x7f090037;
+        public static final int TOPImage=0x7f090036;
+        public static final int TOPName=0x7f090038;
+        public static final int TOPNormalWeight=0x7f09003d;
+        public static final int TOPSex=0x7f09003a;
+        public static final int TOPWeight=0x7f09003c;
+        public static final int gallery=0x7f090001;
+        public static final int gotoTop=0x7f09003e;
+        public static final int inputFood=0x7f090041;
+        public static final int inputWeight=0x7f090040;
+        public static final int registerDog=0x7f090044;
+        public static final int registerFood=0x7f090043;
+        public static final int showHistory=0x7f09003f;
+        public static final int showTemplate=0x7f090045;
+        public static final int switchFood=0x7f090042;
+        public static final int switcher=0x7f090000;
+        public static final int topImage=0x7f090002;
     }
     public static final class layout {
-        public static final int activity_food_settings=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int calc_food_fnc=0x7f030002;
-        public static final int calc_food_input=0x7f030003;
-        public static final int calc_food_result=0x7f030004;
-        public static final int dog_profile_img=0x7f030005;
-        public static final int dog_profile_info=0x7f030006;
-        public static final int history_fnc=0x7f030007;
-        public static final int history_info=0x7f030008;
-        public static final int input_current_food=0x7f030009;
+        public static final int edit_photo=0x7f030000;
+        public static final int input_food=0x7f030001;
+        public static final int input_weight=0x7f030002;
+        public static final int register_dog=0x7f030003;
+        public static final int register_dog_confirm=0x7f030004;
+        public static final int register_dog_profile=0x7f030005;
+        public static final int register_dog_profile_confirm=0x7f030006;
+        public static final int register_food=0x7f030007;
+        public static final int show_history=0x7f030008;
+        public static final int switch_food=0x7f030009;
         public static final int titlebar=0x7f03000a;
+        public static final int top=0x7f03000b;
+        public static final int top_dog_profile=0x7f03000c;
     }
     public static final class menu {
-        public static final int activity_main=0x7f080000;
+        public static final int common_static=0x7f080000;
     }
     public static final class string {
+        public static final int IFIs=0x7f050030;
+        public static final int IWIs=0x7f05002e;
+        public static final int MakeSomething=0x7f050016;
+        public static final int NoSomething=0x7f050015;
+        public static final int RDBirthday=0x7f05003f;
+        public static final int RDBreed=0x7f050042;
+        public static final int RDName=0x7f05003e;
+        /**  <string name="RDWeight">体重</string> 
+         */
+        public static final int RDNrmWeight=0x7f050043;
+        public static final int RDOK=0x7f050044;
+        public static final int RDSex=0x7f050040;
+        public static final int RDSexHdr=0x7f050041;
+        public static final int RDselectPhoto=0x7f05003d;
+        public static final int RFCalorie=0x7f050038;
+        public static final int RFFavorite=0x7f05003b;
+        public static final int RFFoodName=0x7f050037;
+        public static final int RFManufacture=0x7f050039;
+        public static final int RFMemo=0x7f05003a;
+        public static final int SFAlertName=0x7f050032;
+        public static final int SFAlertTime=0x7f050033;
+        public static final int SFNewFood=0x7f050035;
+        public static final int SFPeriodPassed=0x7f050034;
+        public static final int SHOptionBtn=0x7f05002c;
+        public static final int SHTextViewBtn=0x7f05002b;
+        public static final int TOPBirthday=0x7f050025;
+        public static final int TOPBreed=0x7f050027;
+        /**  トップページ（Top Page : TOP） 
+         */
+        public static final int TOPName=0x7f050024;
+        public static final int TOPNormalWeight=0x7f050029;
+        public static final int TOPSex=0x7f050026;
+        public static final int TOPWeight=0x7f050028;
         public static final int app_name=0x7f050000;
+        public static final int betweenG=0x7f050014;
+        public static final int betweenKg=0x7f050013;
+        public static final int btnBack=0x7f05000c;
+        public static final int btnBluetooth=0x7f05000d;
         /**  今回の餌の情報（ボタン） 
          */
-        public static final int btnCalcFood=0x7f050015;
-        public static final int btnGraph=0x7f050013;
+        public static final int btnCalcFood=0x7f050057;
+        public static final int btnCancel=0x7f050010;
+        public static final int btnGraph=0x7f050055;
         /**  前回の餌の情報（ボタン） 
          */
-        public static final int btnModify=0x7f050012;
+        public static final int btnModify=0x7f050054;
+        /**  ボタン 
+         */
+        public static final int btnNext=0x7f05000a;
+        public static final int btnOK=0x7f05000f;
+        public static final int btnSave=0x7f05000b;
+        public static final int btnSaveTemplate=0x7f05000e;
+        /**  その他共通アイテム 
+         */
+        public static final int cmnBetween=0x7f050011;
+        /**  正常メッセージ系 
+         */
+        public static final int confirmMessage=0x7f050012;
         /**  今回の餌の情報（ヘッダ） 
          */
-        public static final int currentFood=0x7f050014;
-        public static final int dogAge=0x7f05000a;
-        public static final int dogBC=0x7f05000c;
-        public static final int dogBreed=0x7f050009;
+        public static final int currentFood=0x7f050056;
+        public static final int dogAge=0x7f05004c;
+        public static final int dogBC=0x7f05004e;
+        public static final int dogBreed=0x7f05004b;
         /**  イヌの情報（コンテンツ） 
          */
-        public static final int dogName=0x7f050008;
+        public static final int dogName=0x7f05004a;
         /**  イヌの情報（写真） 
          */
-        public static final int dogPhotoDesc=0x7f050007;
+        public static final int dogPhotoDesc=0x7f050049;
         /**  イヌの情報（ヘッダ） 
          */
-        public static final int dogProfile=0x7f050006;
-        public static final int dogSex=0x7f05000b;
-        public static final int givefood=0x7f050005;
-        public static final int history=0x7f050004;
+        public static final int dogProfile=0x7f050048;
+        public static final int dogSex=0x7f05004d;
+        public static final int errChange=0x7f050019;
+        public static final int errDuplicate=0x7f050018;
+        /**  エラーメッセージ系 
+         */
+        public static final int errEmpty=0x7f050017;
+        public static final int errInput=0x7f05001a;
+        public static final int errInsertProf=0x7f05001b;
+        public static final int givefood=0x7f050047;
+        /**  メニュー 
+         */
+        public static final int gotoTop=0x7f05001c;
+        /**  給餌入力（Input Food : IF） 
+         */
+        public static final int headerIF=0x7f05002f;
+        /**  体重入力（Input Weight : IW） 
+         */
+        public static final int headerIW=0x7f05002d;
+        /**  犬の新規登録（Register Dog : RD） 
+         */
+        public static final int headerRD=0x7f05003c;
+        /**  餌の新規登録 (Register Food : RF) 
+         */
+        public static final int headerRF=0x7f050036;
+        /**  餌の切り替え設定（Switch Food : SF） 
+         */
+        public static final int headerSF=0x7f050031;
+        /**  過去の入力情報を閲覧（Show History : SH） 
+         */
+        public static final int headerSH=0x7f05002a;
+        public static final int history=0x7f050046;
+        public static final int inputFood=0x7f05001f;
+        public static final int inputWeight=0x7f05001e;
         public static final int menu_settings=0x7f050001;
-        public static final int preFoodAmount=0x7f050011;
-        public static final int preFoodName=0x7f050010;
+        public static final int preFoodAmount=0x7f050053;
+        public static final int preFoodName=0x7f050052;
         /**  前回の餌の情報（コンテンツ） 
          */
-        public static final int preFoodTime=0x7f05000e;
-        public static final int preWeight=0x7f05000f;
+        public static final int preFoodTime=0x7f050050;
+        public static final int preWeight=0x7f050051;
         /**  前回の餌の情報（ヘッダ） 
          */
-        public static final int previousFood=0x7f05000d;
-        public static final int settings=0x7f050003;
+        public static final int previousFood=0x7f05004f;
+        public static final int registerDog=0x7f050022;
+        public static final int registerFood=0x7f050021;
+        /**  以下、古いビュー用 
+         */
+        public static final int settings=0x7f050045;
+        public static final int showHistory=0x7f05001d;
+        public static final int showTemplate=0x7f050023;
+        public static final int switchFood=0x7f050020;
         public static final int title_activity_main=0x7f050002;
+        public static final int unitAgeMonth=0x7f050006;
+        public static final int unitAgeYear=0x7f050005;
+        public static final int unitDay=0x7f050009;
+        /**  新しいビュー用 
+ 単位 
+         */
+        public static final int unitG=0x7f050003;
+        public static final int unitKg=0x7f050004;
+        public static final int unitMonth=0x7f050007;
+        public static final int unitWeek=0x7f050008;
     }
     public static final class style {
         public static final int AppTheme=0x7f070000;
-        public static final int dogName=0x7f070006;
+        public static final int columnItem=0x7f070003;
+        public static final int columnName=0x7f070002;
+        public static final int dogName=0x7f070008;
         public static final int header=0x7f070001;
-        public static final int header_button=0x7f070003;
-        public static final int header_icon=0x7f070005;
-        public static final int header_linearlayout=0x7f070002;
-        public static final int header_text=0x7f070004;
+        public static final int header_button=0x7f070005;
+        public static final int header_icon=0x7f070007;
+        public static final int header_linearlayout=0x7f070004;
+        public static final int header_text=0x7f070006;
     }
 }

@@ -1,0 +1,181 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fadeScrollbars="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4ede4" 
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    
+    <requestFocus />
+    
+    <include layout="@layout/titlebar"/>
+    
+    <!-- 画面ヘッダ -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/header"
+        android:text="@string/headerSF"/>
+    
+    <!-- アラート名 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnName"
+        android:text="@string/SFAlertName" />
+    
+    <EditText
+        android:id="@+id/SFAlertName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/columnItem" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:scaleType="fitXY"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <!-- 切り替え時期 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnName"
+        android:text="@string/SFAlertTime" />
+    
+    <Spinner
+        android:id="@+id/SFAlertTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnItem"
+        android:layout_gravity="center_horizontal"
+        android:entries="@array/SFAlertTimeArr" />
+    
+    <!-- 切り替え時期（年齢）のメニュー -->
+    <LinearLayout
+        android:id="@+id/SFAlertAgeLyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnItem"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/SFAgeYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/unitAgeYear" />
+        <EditText
+            android:id="@+id/SFAgeMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/unitAgeMonth" />
+    </LinearLayout>
+    
+    <!-- 切り替え時期（体重）のメニュー -->
+    <LinearLayout
+        android:id="@+id/SFAlertWeightLyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnItem"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/SFWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/unitKg" />
+    </LinearLayout>
+    
+    <!-- 切り替え時期（期間）のメニュー -->
+    <LinearLayout
+        android:id="@+id/SFAlertPeriodLyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnItem"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/SFPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+	    <Spinner
+	        android:id="@+id/SFPeriodUnit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:entries="@array/SFPeriodUnitArr" />
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="@string/SFPeriodPassed" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:scaleType="fitXY"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <!-- 餌の設定 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnName"
+        android:text="@string/SFNewFood" />
+    
+    <Spinner
+        android:id="@+id/SFNewFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnItem"
+        android:layout_gravity="center_horizontal"
+        android:entries="@array/SFNewFoodArr" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:scaleType="fitXY"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <!-- 「次へ」ボタン -->
+    <Button
+        android:id="@+id/SFNextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="@string/btnNext" />
+    
+</LinearLayout>
+
+</ScrollView>

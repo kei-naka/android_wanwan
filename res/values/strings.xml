@@ -4,6 +4,124 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     
+    <!-- 新しいビュー用 -->
+    
+    <!-- 単位 -->
+    <string name="unitG">g</string>
+    <string name="unitKg">kg</string>
+    <string name="unitAgeYear">歳</string>
+    <string name="unitAgeMonth">ヶ月</string>
+    <string name="unitMonth">ヶ月</string>
+    <string name="unitWeek">週</string>
+    <string name="unitDay">日</string>
+    
+    <!-- ボタン -->
+    <string name="btnNext">次へ（確認）</string>
+    <string name="btnSave">保存</string>
+    <string name="btnBack">戻る</string>
+    <string name="btnBluetooth">Bluetooth受信</string>
+    <string name="btnSaveTemplate">テンプレート保存</string>
+    <string name="btnOK">OK</string>
+    <string name="btnCancel">Cancel</string>
+    
+    <!-- その他共通アイテム -->
+    <string name="cmnBetween"> - </string>
+    
+    <!-- 正常メッセージ系 -->
+    <string name="confirmMessage">上記の内容でよろしいですか？</string>
+    <string name="betweenKg">%1$s - %2$s kg</string>
+    <string name="betweenG">%1$s - %2$s g</string>
+    <string name="NoSomething">%1$sがありません。</string>
+    <string name="MakeSomething">%1$sを登録して下さい。</string>
+    
+    <!-- エラーメッセージ系 -->
+    <string name="errEmpty">%1$sを入力して下さい。</string>
+    <string name="errDuplicate">「%1$s」は登録済みです。</string>
+    <string name="errChange">%1$sを変更して下さい。</string>
+    <string name="errInput">入力エラー</string>
+    <string name="errInsertProf">プロフィール情報の登録に失敗しました。</string>
+    
+    <!-- メニュー -->
+    <string name="gotoTop">トップ画面へ戻る</string>
+    <string name="showHistory">過去の入力情報を閲覧</string>
+    <string name="inputWeight">体重を入力</string>
+    <string name="inputFood">給餌情報を入力</string>
+    <string name="switchFood">餌の切り替え設定</string>
+    <string name="registerFood">餌の新規登録</string>
+    <string name="registerDog">新規プロフィール登録</string>
+    <string name="showTemplate">テンプレート一覧</string>
+    
+    <!-- トップページ（Top Page : TOP） -->
+    <string name="TOPName">なまえ</string>
+    <string name="TOPBirthday">誕生日</string>
+    <string name="TOPSex">性別</string>
+    <string name="TOPBreed">犬種</string>
+    <string name="TOPWeight">体重</string>
+    <string name="TOPNormalWeight">適正体重</string>
+    
+    <!-- 過去の入力情報を閲覧（Show History : SH） -->
+    <string name="headerSH">過去の体重、給餌一覧</string>
+    <string name="SHTextViewBtn">文字ベースの表示へ</string>
+    <string name="SHOptionBtn">表示オプション</string>
+    
+    <!-- 体重入力（Input Weight : IW） -->
+    <string name="headerIW">体重入力</string>
+    <string name="IWIs">の体重は</string>
+    
+    <!-- 給餌入力（Input Food : IF） -->
+    <string name="headerIF">給餌入力</string>
+    <string name="IFIs">の餌は</string>
+    
+    <!-- 餌の切り替え設定（Switch Food : SF） -->
+    <string name="headerSF">餌の切り替えアラート設定</string>
+    <string name="SFAlertName">アラート名</string>
+    
+    <string name="SFAlertTime">切り替え時期</string>
+    <string-array name="SFAlertTimeArr">
+        <item>年齢で設定</item>
+        <item>体重で設定</item>
+        <item>期間で設定</item>
+    </string-array>
+    
+    <string-array name="SFPeriodUnitArr">
+        <item>ヶ月</item>
+        <item>週</item>
+        <item>日</item>
+    </string-array>
+    <string name="SFPeriodPassed">経過</string>
+    
+    <string name="SFNewFood">餌の設定</string>
+    <string-array name="SFNewFoodArr">
+        <item>未設定</item>
+    </string-array>
+        
+    <!-- 餌の新規登録 (Register Food : RF) -->
+    <string name="headerRF">餌の新規登録</string>
+    <string name="RFFoodName">餌名</string>
+    <string name="RFCalorie">100gあたりのカロリー</string>
+    <string name="RFManufacture">製造元</string>
+    <string name="RFMemo">一口メモ</string>
+    <string name="RFFavorite">お気に入り度</string>
+    
+    <!-- 犬の新規登録（Register Dog : RD） -->
+    <string name="headerRD">新規プロフィール登録</string>
+    <string name="RDselectPhoto">写真を選択</string>
+    <string name="RDName">なまえ</string>
+    <string name="RDBirthday">誕生日</string>
+    <string name="RDSex">性別</string>
+    <string name="RDSexHdr">%1$sを選択してください</string>
+    <string-array name="RDSexArr">
+        <item>未選択</item>
+        <item>オス</item>
+        <item>メス</item>
+    </string-array>
+    <string name="RDBreed">犬種</string>
+    <!-- <string name="RDWeight">体重</string> -->
+    <string name="RDNrmWeight">適正体重</string>
+    <string name="RDOK">「%1$s」のプロフィールを登録しました。</string>
+    
+    <!-- 以下、古いビュー用 -->
+    
     <string name="settings">設定</string>
     <string name="history">履歴</string>
     <string name="givefood">給餌</string>

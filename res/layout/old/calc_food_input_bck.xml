@@ -1,0 +1,111 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:paddingTop="10dip"
+	android:paddingRight="5dip"
+	android:paddingBottom="10dip"
+	android:paddingLeft="10dip"
+	android:orientation="vertical">
+	
+    <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingRight="10dip"
+		android:textSize="@dimen/textM"
+		android:textColor="#000"
+		android:id="@+id/curFoodTime"
+		android:text="11/12(Thu) 13:45" />
+
+    <CheckBox
+	     android:id="@+id/checkBC"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:textSize="@dimen/textM"
+	     android:textColor="#000"
+	     android:text="避妊・去勢手術済み" />
+	
+	 <TextView
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:paddingTop="10dp"
+	     android:layout_gravity="left"
+	     android:textColor="#000"
+	     android:text="1日の運動量・労働量は" />
+	 
+	 <Spinner
+	     android:id="@+id/dogExTimePDay"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@drawable/spinner_design"
+	     android:entries="@array/exTimePDay" />
+	
+	 <TextView
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:paddingTop="10dp"
+	     android:layout_gravity="left"
+	     android:textColor="#000"
+	     android:text="年齢は" />
+	 
+	 <Spinner
+	     android:id="@+id/dogAgeCategory"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@drawable/spinner_design"
+	     android:entries="@array/dogAge"/>
+	
+	 <TextView
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:paddingTop="10dp"
+	     android:layout_gravity="left"
+	     android:textColor="#000"
+	     android:text="性別・妊娠の有無は" />
+	 
+	 <Spinner
+	     android:id="@+id/dogSexCategory"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:background="@drawable/spinner_design"
+	     android:entries="@array/dogSex" />
+	 
+	 <TextView
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:paddingTop="10dp"
+	     android:layout_gravity="left"
+	     android:textColor="#000"
+	     android:text="今の体重（kg）は" />
+	 
+	 <EditText
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:id="@+id/dogWeight"
+	     android:inputType="numberDecimal"
+	     android:focusable="false"
+	     android:text="12.3" />
+	 
+	 <TextView
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:paddingTop="10dp"
+	     android:layout_gravity="left"
+	     android:textColor="#000"
+	     android:text="飼い主として" />
+	 
+	 <Spinner
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:id="@+id/weightDirection"
+	     android:background="@drawable/spinner_design"
+	     android:entries="@array/weightDirection" />
+
+</LinearLayout>
+
+</ScrollView>

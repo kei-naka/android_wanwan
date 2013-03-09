@@ -1,0 +1,156 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fadeScrollbars="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" > 
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4ede4"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    
+    <requestFocus />
+    
+    <!-- アプリ名 -->
+    <include layout="@layout/titlebar"/>
+    
+    <!-- ヘッダ -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/header"
+        android:text="@string/headerRF"/>
+    
+    <!-- 餌名入力フォーム -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnName"
+        android:text="@string/RFFoodName" />
+    
+    <EditText
+        android:id="@+id/RFFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/columnItem" />
+  
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:scaleType="fitXY"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <!-- カロリー入力フォーム -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnName"
+        android:text="@string/RFCalorie" />
+    
+    <EditText
+        android:id="@+id/RFCalorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/columnItem" />
+  
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:scaleType="fitXY"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <!-- 製造元入力フォーム -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnName"
+        android:text="@string/RFManufacture" />
+    
+    <EditText
+        android:id="@+id/RFManufacture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/columnItem" />
+  
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:scaleType="fitXY"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <!-- メモ入力フォーム -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnName"
+        android:text="@string/RFMemo" />
+    
+    <EditText
+        android:id="@+id/RFMemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/columnItem" />
+  
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:scaleType="fitXY"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <!-- お気に入り度入力フォーム -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/columnName"
+        android:text="@string/RFFavorite" />
+
+    <RatingBar
+        android:id="@+id/RFFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="0.5"
+        style="@style/columnItem"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:scaleType="fitXY"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    
+    <Button
+        android:id="@+id/RFNextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/btnNext" />
+    
+</LinearLayout>
+
+</ScrollView>

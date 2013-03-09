@@ -1,0 +1,126 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="5dp"
+	android:layout_marginLeft="10dp"
+	android:layout_marginRight="10dp"
+	android:layout_marginBottom="5dp"
+	android:layout_gravity="center_horizontal"
+	android:background="#326823">
+	    
+	<TableRow>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="5dp"
+		    android:textColor="#FFF"
+		    android:text="@string/TOPName" />
+		<TextView
+		    android:id="@+id/TOPName"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:background="#afdb8c"
+		    android:textColor="#000" />
+		    <!-- android:text="DOG_NAME" /> -->
+	</TableRow>
+	    	    
+	<TableRow>
+	    <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="5dp"
+		    android:textColor="#FFF"
+		    android:text="@string/TOPBirthday" />
+		<TextView
+		    android:id="@+id/TOPBirthday"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:background="#afdb8c"
+		    android:textColor="#000" />
+		    <!-- android:text="DOG_BIRTHDAY" /> -->
+	</TableRow>
+	
+	<TableRow>
+	    <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_margin="5dp"
+		    android:textColor="#FFF"
+		    android:text="@string/TOPSex" />
+		<TextView
+		    android:id="@+id/TOPSex"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center_vertical"
+		    android:padding="5dp"
+		    android:background="#afdb8c"
+		    android:textColor="#000" />
+		    <!-- android:text="DOG_SEX" /> -->
+	</TableRow>
+
+    <TableRow>
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="5dp"
+	        android:textColor="#FFF"
+	        android:text="@string/TOPBreed" />
+	    <TextView
+	        android:id="@+id/TOPBreed"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center_vertical"
+	        android:padding="5dp"
+	        android:background="#afdb8c"
+		    android:textColor="#000" />
+		    <!-- android:text="DOG_BREED" /> -->
+    </TableRow>
+	    
+    <TableRow>
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="5dp"
+	        android:textColor="#FFF"
+	        android:text="@string/TOPWeight" />
+	    <TextView
+	        android:id="@+id/TOPWeight"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center_vertical"
+	        android:padding="5dp"
+	        android:background="#afdb8c"
+		    android:textColor="#000" />
+		    <!-- android:text="DOG_WEIGHT" /> -->
+    </TableRow>
+    
+    <TableRow>
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="5dp"
+	        android:textColor="#FFF"
+	        android:text="@string/TOPNormalWeight" />
+	    <TextView
+	        android:id="@+id/TOPNormalWeight"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center_vertical"
+	        android:padding="5dp"
+	        android:background="#afdb8c"
+		    android:textColor="#000" />
+		    <!-- android:text="12.3" /> -->
+    </TableRow>
+</TableLayout>

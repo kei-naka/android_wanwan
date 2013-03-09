@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/gotoTop"
+        android:title="@string/gotoTop"
+        android:orderInCategory="1" />
+    
+    <item
+        android:id="@+id/showHistory"
+        android:title="@string/showHistory"
+        android:orderInCategory="2" />
+    
+    <item
+        android:id="@+id/inputWeight"
+        android:title="@string/inputWeight"
+        android:orderInCategory="3" />
+    
+    <item
+        android:id="@+id/inputFood"
+        android:title="@string/inputFood"
+        android:orderInCategory="4" />
+    
+    <item
+        android:id="@+id/switchFood"
+        android:title="@string/switchFood"
+        android:orderInCategory="5" />
+    
+    <item
+        android:id="@+id/registerFood"
+        android:title="@string/registerFood"
+        android:orderInCategory="6" />
+    
+    <item
+        android:id="@+id/registerDog"
+        android:title="@string/registerDog"
+        android:orderInCategory="7" />
+    
+    <item
+        android:id="@+id/showTemplate"
+        android:title="@string/showTemplate"
+        android:orderInCategory="8" />
+    
+</menu>

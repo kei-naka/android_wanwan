@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar" >
         <activity
-            android:name=".MainActivity"
+            android:name=".Top.Top"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="CalcFoodResultActivity"></activity>
-        <activity android:name="InputCurrentFoodActivity"></activity>
+        <activity android:name=".RegisterFood.RegisterFood"></activity>
+        <activity android:name=".InputWeight.InputWeight"></activity>
+        <activity android:name=".SwitchFood.SwitchFood"></activity>
+        <activity android:name=".ShowHistory.ShowHistory"></activity>
+        <activity android:name=".InputFood.InputFood"></activity>
+        <activity android:name=".RegisterDog.RegisterDog"></activity>
+        <activity android:name=".RegisterDog.RegisterDogConfirm"></activity>
+        <activity android:name=".Top.EditPhoto"></activity>
     </application>
 
 </manifest>

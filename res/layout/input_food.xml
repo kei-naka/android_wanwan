@@ -1,0 +1,126 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fadeScrollbars="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4ede4"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    
+    <requestFocus />
+    
+    <include layout="@layout/titlebar"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/header"
+        android:text="@string/headerIF"/>
+    
+    <ImageView
+		android:id="@+id/topImage"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal"
+		android:src="@drawable/dog"
+		android:contentDescription="top image" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+	        
+	    <TextView
+	        android:id="@+id/IFDateTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:textColor="#000"
+	        android:text="12/3 12:34" />
+	    <TextView
+	        android:id="@+id/IFDogName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="5dp"
+	        android:textColor="#000"
+	        android:text="あああ（犬の名前）" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="5dp"
+	        android:textColor="#000"
+	        android:text="@string/IFIs" />
+    
+    </LinearLayout>
+    
+    <Spinner
+        android:id="@+id/IFFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp" />
+        
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+        
+        <EditText
+            android:id="@+id/IFWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000"
+            android:text="@string/unitG" />
+        
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/IFBluetoothBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text="@string/btnBluetooth" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+	    <Button
+	        android:id="@+id/IFSaveTmplBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="@string/btnSaveTemplate" />
+	    
+	    <Button
+	        android:id="@+id/IFSaveBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginLeft="20dp"
+	        android:text="@string/btnSave" />
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

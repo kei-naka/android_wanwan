@@ -11,6 +11,27 @@
 		<item name="android:background">#d9c2a3</item>
 		<item name="android:textColor">#5f4a18</item>
     </style>
+    
+    <style name="columnName">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">#a2bc2d</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    
+    <style name="columnItem">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+    </style>
 
     <style name="header_linearlayout">
 		<item name="android:layout_width">match_parent</item>
