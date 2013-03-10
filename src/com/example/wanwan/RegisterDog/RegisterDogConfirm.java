@@ -1,7 +1,7 @@
 package com.example.wanwan.RegisterDog;
 
 import com.example.wanwan.R;
-import com.example.wanwan.Dao.DatabaseOpenHelper;
+import com.example.wanwan.model.wanwanDBHelper;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -119,11 +119,11 @@ public class RegisterDogConfirm extends Activity {
 		public void onClick(View view) {
 			String name = nameTextView.getText().toString();
 			
-			DatabaseOpenHelper helper = new DatabaseOpenHelper(RegisterDogConfirm.this);
+			wanwanDBHelper helper = new wanwanDBHelper(RegisterDogConfirm.this);
 			SQLiteDatabase db = helper.getWritableDatabase();
 
 			// name は空じゃない前提
-			Cursor prof = db.query(DatabaseOpenHelper.getTableDogProfile()
+			Cursor prof = db.query(wanwanDBHelper.getTableDogInfo()
 				,new String[] {"name", "birthday", "sex", "breed"}
 				, "name = '" + name + "'", null, null, null, null);
 
@@ -150,7 +150,7 @@ public class RegisterDogConfirm extends Activity {
 				 * →insert した旨のダイアログを出して TOP へ移動
 				 */
 				
-				Cursor maxId = db.query(DatabaseOpenHelper.getTableDogProfile(), 
+				Cursor maxId = db.query(wanwanDBHelper.getTableDogInfo(), 
 						new String[] {"id"}, null, null, null, null, null);
 						// db.rawQuery("select max(id) from dog_info", null);
 				int id = 1;
@@ -178,7 +178,7 @@ public class RegisterDogConfirm extends Activity {
 					 * VALUES
 					 *   (...);
 					 */
-					db.insert(DatabaseOpenHelper.getTableDogProfile(), "1", values);
+					db.insert(wanwanDBHelper.getTableDogInfo(), "1", values);
 					
 					/*
 					 * UPDATE dog_info
@@ -187,7 +187,7 @@ public class RegisterDogConfirm extends Activity {
 					 */
 					ContentValues flag = new ContentValues();
 					flag.put("active_flg", 0);
-					db.update(DatabaseOpenHelper.getTableDogProfile(), flag, "name <> '" + name + "'", null);
+					db.update(wanwanDBHelper.getTableDogInfo(), flag, "name <> '" + name + "'", null);
 					
 					AlertDialog.Builder dialog = new AlertDialog.Builder(RegisterDogConfirm.this);
 					dialog.setTitle(R.string.headerRD);
