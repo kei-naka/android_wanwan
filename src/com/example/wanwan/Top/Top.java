@@ -1,7 +1,7 @@
 package com.example.wanwan.Top;
 
 import com.example.wanwan.R;
-import com.example.wanwan.Dao.DatabaseOpenHelper;
+import com.example.wanwan.model.wanwanDBHelper;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -25,7 +25,7 @@ public class Top extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.top);
         
-        DatabaseOpenHelper helper = new DatabaseOpenHelper(this);
+        wanwanDBHelper helper = new wanwanDBHelper(this);
         SQLiteDatabase db = helper.getReadableDatabase();
 
         // データベースからactive_flagが1のプロフィールを抽出、表示する
@@ -39,7 +39,7 @@ public class Top extends Activity {
         	 * WHERE
         	 *   active_flg = '1';
         	 */
-        	Prof = db.query(DatabaseOpenHelper.getTableDogProfile()
+        	Prof = db.query(wanwanDBHelper.getTableDogInfo()
         			, new String[] {"name", "birthday", "sex", "breed", "nrmwght_min", "nrmwght_max"}
         			, "active_flg = '1'", null, null, null, null);
         	
